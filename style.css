@@ -1,7 +1,7 @@
 /* Estilo global */
 body {
     font-family: 'Poppins', sans-serif;
-    background: linear-gradient(135deg, #fbc2eb, #a6c1ee);
+    background: linear-gradient(135deg, #7be0ae, #344e41);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -41,13 +41,13 @@ input {
 }
 
 input:focus {
-    border-color: #7C3AED;
-    box-shadow: 0px 0px 8px rgba(124, 58, 237, 0.5);
+    border-color: #344e41;
+    box-shadow: 0px 0px 8px #18241e;
 }
 
 /* Botão de adicionar */
 button {
-    background: #7C3AED;
+    background: #344e41;
     color: white;
     border: none;
     border-radius: 50%;
@@ -60,7 +60,7 @@ button {
 }
 
 button:hover {
-    background: #5B21B6;
+    background: #3b4741;
 }
 
 /* Lista de tarefas */
