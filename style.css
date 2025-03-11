@@ -1,0 +1,32 @@
+body{
+    font-family: Arial, Helvetica, sans-serif; /*tipo da fonte*/
+    display: flex; /*a tela se ajusta automaticamente dependendo do dispositivo*/
+    justify-content: center; /*o conteúdo fica centralizado na tela*/
+    height: 100vh; /*a altura do corpo do To-Do é 1/100 da altura da view*/
+    background-color: #ffffff;
+}
+
+.container{
+    background: white; 
+    padding: 20px; /*cria uma "caixa" envolta desse container*/
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1); /*coloca sombra nessa caixa*/
+    border-radius: 5px; /*arredonda os cantos da caixa*/
+}
+
+button {
+    margin-left: 10px; /*o botão fica afastado 10px do elemento à esquerda*/
+    cursor: pointer; /*tipo de cursor quando o mouse passar no botão*/
+}
+
+ul{
+    list-style-type: none; /*evitar de ter nenhum quantificador antes da tarefa*/
+    padding: 0;
+}
+
+li{
+    background: #ddd;
+    margin: 5px 0; /*5px em relação às tarefas e 0 em relação à borda*/
+    padding: 10px;
+    display: flex;
+    justify-content: space-between; /*justifica o conteúdo da li entre outras duas estruturas*/
+}
