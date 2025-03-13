@@ -1,130 +1,127 @@
-/* Estilo global */
 body {
-    font-family: 'Poppins', sans-serif;
-    background: linear-gradient(135deg, #000000, #344e41);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
+    font-family: 'Poppins', sans-serif; /* Define a fonte principal */
+    background: linear-gradient(135deg, #000000, #344e41); /* Cria um fundo com gradiente diagonal */
+    display: flex; /* Usa flexbox para organizar os elementos */
+    flex-direction: column; /* Organiza os elementos em coluna */
+    justify-content: center; /* Centraliza os itens verticalmente */
+    align-items: center; /* Centraliza os itens horizontalmente */
+    height: 100vh; /* Define a altura como 100% da tela */
+    margin: 0; /* Remove as margens padrão do body */
 }
 
-/* Frase do Kratos */
 .fraseKratos {
-    font-family: 'Bebas Neue', sans-serif;
-    font-size: 22px;
-    color: #fff;
-    text-align: center;
-    width: 80%;
-    max-width: 600px;
-    margin-bottom: 15px;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    font-family: 'Bebas Neue', sans-serif; /* Define uma fonte diferenciada */
+    font-size: 22px; /* Define o tamanho do texto */
+    color: #fff; /* Cor branca para melhor contraste */
+    text-align: center; /* Centraliza o texto */
+    width: 80%; /* Define a largura máxima como 80% da tela */
+    max-width: 600px; /* Define a largura máxima fixa */
+    margin-bottom: 15px; /* Adiciona espaço abaixo do texto */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Adiciona sombra ao texto para destacar */
 }
 
-/* Container central */
 .container {
-    background: white;
-    padding: 20px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
-    border-radius: 10px;
-    width: 350px;
-    text-align: center;
+    background: white; /* Define o fundo branco */
+    padding: 20px; /* Adiciona espaçamento interno */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Adiciona sombra ao container */
+    border-radius: 10px; /* Arredonda os cantos do container */
+    width: 350px; /* Define a largura fixa */
+    text-align: center; /* Centraliza o conteúdo */
 }
 
-/* Título estilizado */
 h1 {
-    color: #344e41;
+    color: #344e41; /* Define a cor do texto */
 }
 
-/* Grupo de entrada */
+/* Define a estrutura do input e do botão */
 .input-group {
-    display: flex;
-    margin-bottom: 20px;
+    display: flex; /* Usa flexbox para organizar os elementos lado a lado */
+    margin-bottom: 20px; /* Adiciona espaçamento abaixo */
 }
 
+/* Estiliza o campo de entrada */
 input {
-    flex: 1;
-    padding: 10px;
-    border: 2px solid #ddd;
-    border-radius: 25px;
-    outline: none;
-    transition: 0.3s;
+    flex: 1; /* Faz o input ocupar todo o espaço disponível */
+    padding: 10px; /* Adiciona espaçamento interno */
+    border: 2px solid #ddd; /* Borda cinza clara */
+    border-radius: 25px; /* Arredonda as bordas */
+    outline: none; /* Remove a borda ao focar no campo */
+    transition: 0.3s; /* Adiciona um efeito de transição suave */
 }
 
+/* Efeito ao focar no input */
 input:focus {
-    border-color: #344e41;
-    box-shadow: 0px 0px 8px #18241e;
+    border-color: #344e41; /* Altera a cor da borda ao focar */
+    box-shadow: 0px 0px 8px #18241e; /* Adiciona um efeito de brilho */
 }
 
-/* Lista de tarefas */
+/* Remove os estilos padrão da lista */
 ul {
     list-style-type: none;
     padding: 0;
 }
 
-/* Botão de adicionar */
 button {
-    background: #344e41;
-    color: white;
-    border: none;
-    border-radius: 50%;
+    background: #344e41; /* Define a cor de fundo */
+    color: white; /* Define a cor do texto */
+    border: none; /* Remove a borda */
+    border-radius: 50%; /* Transforma o botão em um círculo */
     width: 40px;
     height: 40px;
     font-size: 20px;
-    cursor: pointer;
-    margin-left: 10px;
+    cursor: pointer; /* Altera o cursor para indicar que é clicável */
+    margin-left: 10px; /* Adiciona espaçamento entre botões */
     transition: 0.3s;
 }
 
+/* Efeito ao passar o mouse sobre o botão */
 button:hover {
     background: #3b4741;
 }
 
-/* Lista de tarefas */
 li {
-    background: #f4f4f4;
-    padding: 10px;
-    border-radius: 5px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 5px 0;
+    background: #f4f4f4; /* Define um fundo claro */
+    padding: 10px; /* Adiciona espaçamento interno */
+    border-radius: 5px; /* Arredonda as bordas */
+    display: flex; /* Usa flexbox para organizar os elementos */
+    justify-content: space-between; /* Distribui os elementos igualmente */
+    align-items: center; /* Alinha os itens verticalmente */
+    margin: 5px 0; /* Adiciona espaçamento entre as tarefas */
     transition: 0.3s;
 }
 
-/* Botões de ação */
 .botoesTarefa {
     display: flex;
-    gap: 5px;
+    gap: 5px; /* Adiciona espaço entre os botões */
 }
 
 .botaoFeito {
-    background: #2ecc71;
+    background: #2ecc71; /* Cor verde para indicar sucesso */
     font-size: 14px;
     width: 30px;
     height: 30px;
     border-radius: 50%;
 }
 
+/* Efeito ao passar o mouse sobre o botão de feito */
 .botaoFeito:hover {
     background: #27ae60;
 }
 
 .botaoDeletar {
-    background: #e63946;
+    background: #e63946; /* Cor vermelha para deletar */
     font-size: 14px;
     width: 30px;
     height: 30px;
     border-radius: 50%;
 }
 
+/* Efeito ao passar o mouse sobre o botão de deletar */
 .botaoDeletar:hover {
     background: #d62839;
 }
 
-/* Efeito de tarefa concluída */
 .feita {
-    text-decoration: line-through;
-    color: gray;
+    text-decoration: line-through; /* Adiciona um risco no texto */
+    color: gray; /* Muda a cor do texto */
 }
